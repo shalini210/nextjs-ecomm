@@ -2,6 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@layer components {
+  .p-custom {
+    @apply text-[16px] text-red-700;
+  }
+  .field-group
+  {
+    @apply w-full flex gap-3 mt-2;
+
+  }
+  .field-group>label{
+    @apply font-bold w-1/3 text-right;
+  }
+  .field-group>input
+  {
+    @apply border w-2/3 h-8;
+  }
+  .field-group>textarea
+  {
+    @apply border w-2/3 h-16;
+  }
+  .btn-group
+  {
+    @apply w-1/2  mt-8 flex h-16 justify-evenly align-middle
+  }
+  .btn-success
+  {
+    @apply w-36 h-10 bg-green-600 ;
+  }
+  .btn-danger
+  {
+    @apply w-36 h-10 bg-red-600 ;
+  }
+  .btn-success:hover
+  {
+    @apply border-2 border-green-600  bg-green-900 text-white;
+  }
+  .btn-danger:hover
+  {
+    @apply border-2 border-red-600   bg-red-900 text-white;
+  }
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,7 +59,7 @@
   }
 }
 
-body {
+.body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
